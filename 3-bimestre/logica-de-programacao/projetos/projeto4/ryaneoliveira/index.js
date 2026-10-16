@@ -2,30 +2,30 @@ const cliente = "Otávio Lacerda"
 const opcao = 1
 const quantidade = 5
 const formaPagamento = "cartao"
-const statusPedido
+const statusPedido = "cancelado"
 
 let item
 
 switch (opcao) {
 
     case 1:
-      console.log("Sushi")
+      item = "Sushi"
       break
 
     case 2:
-      console.log("Temaki")    
+      item = "Temaki"    
     break  
 
     case 3:
-      console.log("Yakisoba")
+      item = "Yakisoba"
     break
     
     case 4: 
-      console.log("Chá Gelado")
+      item = "Chá Gelado"
     break   
 
     default:
-      console.log("Opção inválida")
+      item = "Opção inválida"
 } 
 
 
@@ -34,23 +34,23 @@ let precoUnitario
 switch (opcao) {
 
     case 1:
-      console.log(32)
+      precoUnitario = 32
       break
 
     case 2:
-      console.log(24)    
+      precoUnitario = 24    
     break  
 
     case 3:
-      console.log(28)
+      precoUnitario = 28
     break
     
     case 4: 
-      console.log(9)
+      precoUnitario = 9
       break   
 
     default:
-      console.log(0)
+      precoUnitario = 0
 }
 
 const subtotal = precoUnitario * quantidade 
@@ -69,19 +69,19 @@ let mensagemPagamento
 switch (formaPagamento) {
 
   case "pix":
-    console.log("Pagamento via PIX")
+    mensagemPagamento = "Pagamento via PIX"
     break
 
   case "cartao":
-    console.log("Pagamento via cartão")
+    mensagemPagamento = "Pagamento via cartão"
     break
 
   case "dinheiro":
-    console.log("Pagamento em dinheiro")
+    mensagemPagamento = "Pagamento em dinheiro"
     break
 
   default:
-    console.log("Forma de pagamento inválida")
+    mensagemPagamento = "Forma de pagamento inválida"
 }
 
 
@@ -91,15 +91,15 @@ switch (formaPagamento) {
 
   case "pix":
   case "dinheiro":
-    console.log(5)
+    descontoPercentual = 5
     break
 
   case "cartao":
-    console.log(0)
+    descontoPercentual = 0
     break
 
   default:
-    console.log(0)
+    descontoPercentual = 0
 }
 
 
@@ -111,23 +111,23 @@ let mensagemStatus
 switch (statusPedido) {
 
   case "pendente":
-    console.log("Aguardando pagamento")
+    mensagemStatus = "Aguardando pagamento"
     break
 
   case "aprovado":
-    console.log("Pedido em preparo")
+    mensagemStatus = "Pedido em preparo"
     break
 
   case "enviado":
-    console.log("Pedido a caminho")
+    mensagemStatus = "Pedido a caminho"
     break
 
 case "cancelado":
-    console.log("Pedido cancelado")
+    mensagemStatus = "Pedido cancelado"
     break
 
   default:
-    console.log("Status desconhecido")
+    mensagemStatus = "Status desconhecido"
 }
 
 const resumo = `
